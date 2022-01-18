@@ -21,7 +21,3 @@ For the bonus 🎁, a user can book a trip to the island they choose by typing t
 
 1. Validate that the phone number field accepts only phone numbers
 2. When clicking (book now) button in `IslandForm`, show a [confirm message](https://www.w3schools.com/jsref/met_win_confirm.asp) to confirm if the user really wants to book the trip with the following message: "Are you sure you want to book to `{ISLAND_NAME}` with the Name: `{NAME}`, phone: `{PHONE_NUMBER}`"
-
-## 🌶 Part 3: Visitors counter
-
-1. If confirmed (clicking on OK button), you should increment the counter of visitor inside the island selected.
