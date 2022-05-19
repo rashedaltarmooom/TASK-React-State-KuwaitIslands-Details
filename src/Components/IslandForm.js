@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function IslandForm({ island }) {
+export default function IslandForm({ island, incVisitors }) {
   const [Name, setName] = useState("");
   const [phone, setPhone] = useState("");
   return (
@@ -27,7 +27,7 @@ export default function IslandForm({ island }) {
         onClick={() => {
           if (
             window.confirm(
-              `Are you sure you want to book to $(island.name) with the Name: ${Name}, phone: ${phone}`
+              `Are you sure you want to book to ${island.name} with the Name: ${Name}, phone: ${phone}`
             )
           )
             incVisitors(island.id);

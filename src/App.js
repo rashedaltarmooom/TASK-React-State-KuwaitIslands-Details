@@ -14,8 +14,8 @@ function App() {
 
   const incVisitors = (id) => {
     let newIslands = islandsState;
-    newIslands = islandsState.find((island) => island.id === id);
-    newIslands.visitors++;
+    let position = newIslands.findIndex((island) => island.id === id);
+    newIslands[position].visitors++;
     setIslandsState(newIslands);
   };
 
